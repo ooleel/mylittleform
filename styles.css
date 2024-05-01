@@ -1,0 +1,136 @@
+/* General */
+html{font-size: 16px;}
+
+body{
+    background-color: #f0f8ff;
+    margin: 0;
+}
+
+h2{font-family: "Share", sans-serif; color: #ff3e3e;}
+
+p{font-family: "Maven Pro", sans-serif;}
+
+.wrapper{
+    width: 750px;
+    margin: auto;
+}
+
+header, main, form, footer{
+    background-color: #fff;
+    box-shadow: 0 4px 10px #ccc;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+#copyright{
+    font-family: 'Borel', cursive;
+    color:#1a9a8b;
+}
+
+/* Top to bottom */
+/* Header */
+header{
+    background-color: #385a7c;
+    padding: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{width:200px;}
+
+nav ul li{
+    font-family: "PT Sans", sans-serif;
+    margin-right: 20px;
+    list-style-type: none;
+}
+
+a:link{color: #fff;}
+a:visited{color:lightpink}
+
+h1{
+    color: #fff;
+    font-family: "PT Sans", sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#intro p{text-align: center;}
+
+#outro{text-align: center;}
+
+footer{font-size: x-small; text-align: center;}
+
+/* Form */
+form{
+    font-family: "Maven Pro", sans-serif;
+    display:flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+h3{font-family: "Share", sans-serif; color: #12a9b0;}
+
+fieldset{border: #fff;}
+
+.form-group > label{color:#f99192}
+
+#name, #email, #dropdown, #reason{
+    outline: none;
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin-top: 7px;
+    border: 1px solid #dee2e6;
+    border-radius: 3px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.checkbox-group, .radio-group{
+    display: flex;
+    flex-direction: row;
+    margin-top: 7px;
+    position:relative;
+}
+
+input[type=submit]{
+    width: fit-content;
+    display: block;
+    height: 40px;
+    background-color:#385a7c;
+    border: none;
+    font-family: "PT Sans", sans;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+    background-color: #40408a;
+    cursor: pointer;
+}
+
+/* Media queries */
+/* Phones */
+@media only screen and (min-width: 320px) and (max-width: 480px), (orientation: portrait){
+    body{margin: 0;} /* centre the page???*/
+    header, main, form, footer{width: 300px;}
+    /* shrinking all the fonts??? */
+    a{font-size: smaller;}
+    h1{font-size: x-large;}
+    #outro{font-size: medium;}
+    #name, #email, #dropdown, #reason, input[type=submit]{width: 100%;}
+    .logo{width: 150px;}
+}
+
+/* Tablets, portrait and landscape */
+/* @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+...
+} */
+
