@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Survey about the CLG course">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Maven+Pro:wght@400..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Share:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Course survey</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="/images/CLG-SOC-logo.svg" alt="Website logo">
+                </div>    
+                <nav>
+                    <ul>
+                        <li><a href="https://www.codelikeagirl.com/" target="_blank">Code Like a Girl</a></li>
+                        <li><a href="https://learnto.codelikeagirl.com/" target="_blank">School Of Code</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h1>End of course survey</h1>
+        </header>
+
+        <main>
+            <section id="intro" onmouseover="celebrate()">
+                <h2>What is it about?</h2>
+                <p>You have just finished completing a course from <strong>Code Like a Girl・School Of Code</strong>.<br>
+                <em id="congrats">Congrats!</em></p>
+                <p>Now, we'd like you to fill out this short survey to tell us about your experience as a student with us!</p>
+            </section>
+        </main>
+
+        <form id="survey">
+            <h2>Tell us...</h2>
+            <fieldset id="person">
+                <h3>About you</h3>
+                <div class="form-group">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label>Are you a scholarship recipient?</label>
+                    <div class="radio-group">
+                        <input type="radio" name="scholarship" id="yes" value="yes">
+                        <label for="yes">Yes</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" name="scholarship" id="no" value="no">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="course">
+                <h3>About your experience with us</h3>
+                <div class="form-group">
+                    <label for="course">Which course(s) did you study?</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" name="course" id="webdev" value="web-dev">
+                        <label for="web-dev"><span>Foundations of Web Dev</span></label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" name="course" id="csharp" value="csharp">
+                        <label for="csharp"><span>Programming with C#</span></label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" name="course" id="js" value="js">
+                        <label for="js"><span>Navigating JavaScript</span></label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" name="course" id="python" value="python">
+                        <label for="python"><span>Python Primer</span></label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" name="course" id="nodejs" value="nodejs">
+                        <label for="nodejs"><span>Building APIs with Node.Js</span></label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" name="course" id="react" value="react">
+                        <label for="react"><span>Building Web apps with React</span></label>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="course">Would you recommend studying with us at <strong>Code Like a Girl・School Of Code</strong>? (from 0 to 5)</label>
+                    <div class="radio-group">
+                        <input type="radio" name="reco" id="zero" value="0">
+                        <label for="zero">0</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" name="reco" id="one" value="1">
+                        <label for="one">1</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" name="reco" id="two" value="2">
+                        <label for="two">2</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" name="reco" id="three" value="3">
+                        <label for="three">3</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" name="reco" id="four" value="4">
+                        <label for="four">4</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" name="reco" id="five" value="5">
+                        <label for="five">5</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset id="webdevelopment" style="display: none;">
+                <h3>About the <em>Foundations of Web Dev</em> course, which topic was...</h3>
+                <div class="form-group">
+                    <label for="favourite">... your <em>favourite</em>?</label>
+                    <select name="favourite" id="dropdown">
+                        <option selected disabled value>Select a topic</option>
+                        <option value="intro">Introduction</option>
+                        <option value="links">Links, colours and fonts</option>
+                        <option value="lists">Lists, tables and images</option>
+                        <option value="divs">Divs, spans, ids and classes</option>
+                        <option value="selectors">CSS selectors and positioning</option>
+                        <option value="conflicts">Resolving CSS conflicts</option>
+                        <option value="responsive">Responsive Web design</option>
+                        <option value="html-forms">HTML forms</option>
+                        <option value="javascript">JavaScript</option>
+                    </select>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="least-favourite">... your <em>least favourite</em>?</label>
+                    <select name="least-favourite" id="dropdown">
+                        <option selected disabled value>Select a topic</option>
+                        <option value="intro">Introduction</option>
+                        <option value="links">Links, colours and fonts</option>
+                        <option value="lists">Lists, tables and images</option>
+                        <option value="divs">Divs, spans, ids and classes</option>
+                        <option value="selectors">CSS selectors and positioning</option>
+                        <option value="conflicts">Resolving CSS conflicts</option>
+                        <option value="responsive">Responsive Web design</option>
+                        <option value="html-forms">HTML forms</option>
+                        <option value="javascript">JavaScript</option>
+                    </select>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="reason">Can you tell us why?</label>
+                    <textarea name="reason" id="reason" placeholder="Just in a few words..."></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset class="interest">
+                <h3>About your future plans</h3>
+                <div class="form-group">
+                    <label for="course">Are you interested in studying any of these courses in the future?</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" name="interest" id="web-dev" value="web-dev">
+                        <label for="web-dev"><span>Foundations of Web Dev</span></label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" name="interest" id="csharp" value="csharp">
+                        <label for="csharp"><span>Programming with C#</span></label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" name="interest" id="js" value="js">
+                        <label for="js"><span>Navigating JavaScript</span></label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" name="interest" id="python" value="python">
+                        <label for="python"><span>Python Primer</span></label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" name="interest" id="nodejs" value="nodejs">
+                        <label for="nodejs"><span>Building APIs with Node.Js</span></label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" name="interest" id="react" value="react">
+                        <label for="react"><span>Building Web apps with React</span></label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" name="interest" id="none" value="none">
+                        <label for="none"><span>None of the above</span></label>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="reason">Do you think your studying experience with us positively influenced your coding journey? Tell us more about that!</label>
+                    <textarea name="reason" id="reason" placeholder="Just in a few words..." onmouseout="beware()"></textarea>
+                </div>
+            </fieldset>
+            <br>
+            <div class="form-group">
+                <!-- <button id="submit" type="submit">Submit</button> -->
+                <input type="submit" value="Submit">
+            </div>
+            <br>
+            <h2 id="outro">Thanks for studying with us and for filling out this survey! ☺︎</h2>
+        </form>
+
+        <footer>
+            <p>CLG / SoC - Foundations of Web Development</p>
+            <p id="copyright">© leeloo schaff 2024</p>
+        </footer>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
