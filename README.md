@@ -15,7 +15,7 @@ A streamlined form-handling web application designed to efficiently collect, val
 ### Features:
 - Dynamic Input Validation: Ensures user-entered data adheres to predefined formats and constraints in real-time.
 - User-Centric Design: Offers an intuitive interface for data entry, promoting ease of use and accessibility.
-- Customizable Logic: Supports integration of custom validation rules and behaviors tailored to specific use cases.
+- Customisable Logic: Supports integration of custom validation rules and behaviours tailored to specific use cases.
 - Lightweight Architecture: Focused on simplicity and performance for seamless deployment in diverse environments.
   
 This project highlights expertise in client-side scripting, form handling, and creating user-focused, functional web applications.
